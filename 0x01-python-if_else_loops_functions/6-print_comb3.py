@@ -4,4 +4,4 @@ for n in range(10):
         if n < 8:
             print('{0}{1}, '.format(n, i), end='')
         elif n == 8:
-            print('{0}{1}'.format(n, i), end='')
+            print('{0}{1}'.format(n, i), end='\n')
