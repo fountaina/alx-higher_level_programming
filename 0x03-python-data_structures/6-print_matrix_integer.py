@@ -1,13 +1,11 @@
 #!/usr/bin/python3
 def print_matrix_integer(matrix=[[]]):
-    if matrix == None:
+    if not matrix:
         return ('')
     for block in matrix:
-        idx = 0
-        for integer in block:
+        for idx in range(len(block)):
             if idx < (len(block) - 1):
-                print('{}'.format(integer), end=' ')
-                idx+=1
+                print('{}'.format(block[idx]), end=' ')
             else:
-                print('{}'.format(integer), end='')
+                print('{}'.format(block[idx]), end='')
         print(end='\n')
